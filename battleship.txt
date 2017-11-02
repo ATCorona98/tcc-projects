@@ -1,0 +1,59 @@
+Francisco Rome
+10/31/2017
+
+
+5 ships 
+carrier 5
+battleship 4
+cruiser 3
+sub 3
+destroyer 2
+
+~ = ocean
+H = hit
+# = parts of ship
+. = miss
+
+Randomization of where the ships are placed
+board size 10x10
+prompt for location to attack
+
+const int MAX_ROWS =10;
+const int MAX_COLS =10;
+const int MAXSHIPS =100;
+
+
+void InitArray (int numMatrix[MAX_ROWS][MAX_COLS], int numRowsCols);
+void PrintArray(int numMatrix[MAX_ROWS][MAX_COLS], int numRowsCOls);
+
+char DisplayBoard[10][10]
+char StoreBoard[10][10]
+
+enum Column={A=1..J=10}
+enum Row={One=1..Ten=10}
+enum Ships={ carrier, battleship,...}
+enum Orientation= {above, below, left, right}
+
+struct Position{
+	int x;
+	int y;
+}
+struct ShipType {
+	int length;
+	int numHits;
+	bool sunk;
+	ShipType Type;
+	Position pos;
+}
+
+char DisplayBoard[MAXROW[MAXCOL]
+char StoreBoard[MAXROW][MAXCOL]
+Ship ShipArray[MAXSHIPS]
+
+typedef Board char [MAXROW][MAXCOL]
+InitBoard(Board board,)
+PrintBoard()
+PlaceShips()
+UserGuess()
+CheckShipStatus()
+IsValidPlacement()
